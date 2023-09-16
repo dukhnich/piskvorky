@@ -6,15 +6,22 @@ html {
   *, *:before, *:after {
     box-sizing: inherit;
   }
-  
+
+  h1 {
+    font-family: 'Lobster', cursive;
+  }
   body {
     font-family: Arial, sans-serif;
     margin: 0;
+  }
+
+  .game {
     min-height: 100vh;
     color: white;
     background: #283e50;   
   }
-  .container {
+
+  .game__container {
     text-align: center;
     background: #283e50;
     min-height: 100vh;   
@@ -22,9 +29,7 @@ html {
     flex-direction: column;
     justify-content: space-between;
   }
-  h1 {
-    font-family: 'Lobster', cursive;
-  }
+
   .game__header {
     display: flex;
     width: 100%;
@@ -32,7 +37,7 @@ html {
  .game__banner {
     max-width: 100%;
   }
-  main {
+  .game__content {
     padding: 30px 16px;
     flex-grow: 1;
   }
@@ -73,13 +78,13 @@ html {
   }
 
   @media (min-width: 425px) {
-    body {
+    .game {
         background: linear-gradient(#615dad, #ffc8da) no-repeat center;
         display: flex;
         justify-content: center;
         align-items: center;
       }
-      .container {
+      .game__container {
         max-width: 364px;
         margin: auto;
         border-radius: 8px 8px 0 0;
@@ -92,10 +97,10 @@ html {
   }
 
   @media (min-width: 768px) {
-    body {
+    .game {
         align-items: flex-start;
     }
-      .container {
+    .game__container {
         margin: 66px auto;
       }
     }
