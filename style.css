@@ -14,20 +14,44 @@ html {
     min-height: 100vh;
     color: white;
   }
+  .container {
+    width: 500px;
+    margin: 40px auto;
+    border-radius: 16px 16px 0 0;
+    overflow: hidden;
+    text-align: center;
+    
+  }
   h1 {
     font-family: 'Lobster', cursive;
   }
-  img {
+  .game__header {
+    height: 300px;
+    width: 100%;
+  }
+ .game__banner {
+    object-fit: cover;
     max-width: 100%;
   }
   main {
     background: #283e50;
+    padding: 40px 20px;
+  }
+
+  .game__title {
+    margin: 0 0 20px;
+    font-size: 3rem;
+  }
+  .game__footer {
+    display: flex;
+    flex-wrap: wrap;
   }
   .game__button {
     color: white;
     text-decoration: none;
     padding: 10px;
-    border-radius: 4px;
+    flex-basis: 100%;
+    border-top: 1px solid black;
   }
   .game__button--rules {
     background: #1fcca4;
