@@ -15,32 +15,35 @@ html {
     color: white;
   }
   .container {
-    width: 500px;
-    margin: 40px auto;
-    border-radius: 16px 16px 0 0;
+    max-width: 364px;
+    margin: 66px auto;
+    border-radius: 8px 8px 0 0;
     overflow: hidden;
     text-align: center;
-    
+    background: #283e50;   
   }
   h1 {
     font-family: 'Lobster', cursive;
   }
   .game__header {
-    height: 300px;
+    display: flex;
     width: 100%;
   }
  .game__banner {
-    object-fit: cover;
     max-width: 100%;
   }
   main {
-    background: #283e50;
-    padding: 40px 20px;
+    padding: 30px 16px;
   }
 
   .game__title {
-    margin: 0 0 20px;
+    margin: 0 0 30px;
     font-size: 3rem;
+    line-height: 1.2;
+  }
+  .game__desctiption {
+    line-height: 1.5;
+    margin: 0;
   }
   .game__footer {
     display: flex;
@@ -49,7 +52,7 @@ html {
   .game__button {
     color: white;
     text-decoration: none;
-    padding: 10px;
+    padding: 16px;
     flex-basis: 100%;
     border-top: 1px solid black;
   }
