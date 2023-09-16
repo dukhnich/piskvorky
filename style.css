@@ -1,106 +1,117 @@
-/* Základní styly */
+/* Base styles */
 html {
     box-sizing: border-box;
-  }
-  
-  *, *:before, *:after {
-    box-sizing: inherit;
-  }
+}
 
-  h1 {
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+h1 {
     font-family: 'Lobster', cursive;
-  }
-  body {
+}
+body {
     font-family: Arial, sans-serif;
     margin: 0;
-  }
+}
 
-  .game {
+/* Containers styles */
+
+.game {
     min-height: 100vh;
     color: white;
     background: #283e50;   
-  }
+}
 
-  .game__container {
+.game__container {
     text-align: center;
     background: #283e50;
     min-height: 100vh;   
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-  }
+}
 
-  .game__header {
+/* Header styles */
+
+.game__header {
     display: flex;
     width: 100%;
-  }
- .game__banner {
+}
+.game__banner {
     max-width: 100%;
-  }
-  .game__content {
+}
+/* Content styles */
+
+.game__content {
     padding: 30px 16px;
     flex-grow: 1;
-  }
+}
 
-  .game__title {
+.game__title {
     margin: 0 0 30px;
     font-size: 2rem;
     line-height: 1.2;
-  }
-  .game__desctiption {
+}
+.game__desctiption {
     line-height: 1.5;
     margin: 0;
-  }
-  .game__footer {
+}
+
+/* Footer styles */
+
+.game__footer {
     display: flex;
     flex-wrap: wrap;
-  }
-  .game__button {
+}
+.game__button {
     color: white;
     text-decoration: none;
     padding: 16px;
     flex-basis: 100%;
     border-top: 1px solid black;
-  }
-  .game__button--rules {
+}
+.game__button--rules {
     background: #1fcca4;
-  }
-  .game__button--rules:hover,
-  .game__button--rules:active {
-        background: #1cbb96;
-  }
-  .game__button--start {
+}
+.game__button--rules:hover,
+.game__button--rules:active {
+    background: #1cbb96;
+}
+.game__button--start {
     background: #0197f6;
-  }
-  .game__button--start:hover,
-  .game__button--start:active {
-        background: #0090e9;
-  }
+}
+.game__button--start:hover,
+.game__button--start:active {
+    background: #0090e9;
+}
 
-  @media (min-width: 425px) {
+/* Media queries*/
+
+@media (min-width: 425px) {
     .game {
         background: linear-gradient(#615dad, #ffc8da) no-repeat center;
         display: flex;
         justify-content: center;
         align-items: center;
-      }
-      .game__container {
+    }
+    .game__container {
         max-width: 364px;
         margin: auto;
         border-radius: 8px 8px 0 0;
         overflow: hidden;
         min-height: auto;
-      }
-      .game__title {
+    }
+    .game__title {
         font-size: 3rem;
-      }
-  }
+    }
+}
 
-  @media (min-width: 768px) {
+@media (min-width: 768px) {
     .game {
         align-items: flex-start;
     }
     .game__container {
         margin: 66px auto;
-      }
     }
+}
