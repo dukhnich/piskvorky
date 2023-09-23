@@ -6,8 +6,8 @@
     margin-bottom: 20px;
 }
 .game-process__title {
-    font-size: 3rem;
-    margin-top: 0;
+    font-size: 4rem;
+    margin: 0 0 20px;
 }
 .game-process__info {
     display: flex;
@@ -22,13 +22,7 @@
     align-items: center;
 }
 .game-process__symbol {
-    aspect-ratio: 1;
-    width: 30px;
     margin-left: 8px;
-}
-.game-process__symbol--noughts {
-    border: 3px solid white;
-    border-radius: 50%;
 }
 .game-process__buttons {
     display: flex;
@@ -37,6 +31,7 @@
 .game__button {
     aspect-ratio: 1;
     border-radius: 4px;
+    padding: 8px;
 }
 .game-process__table {
     display: grid;
