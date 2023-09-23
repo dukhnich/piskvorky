@@ -43,6 +43,7 @@
     grid-template-columns: repeat(10, 1fr);
     width: 80vmin;
     border: 1px solid black;
+    box-shadow: 0 0 20px rgba(0,0,0, 0.2);
 }
 .game-process__cell {
     aspect-ratio: 1;
