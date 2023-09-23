@@ -1,3 +1,4 @@
+// Add 100 buttons to the table wrapper
 const table = document.querySelector('.game-process__table');
 const cellsCount = 100;
 if (table) {
