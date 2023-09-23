@@ -51,6 +51,7 @@
     padding: 0;
     border: 1px solid black;
 }
-.game-process__cell:hover {
-    background: rgba(255, 255, 255, 0.5);
+.game-process__cell:hover,
+.game-process__cell:focus {
+        background: rgba(255, 255, 255, 0.5);
 }
