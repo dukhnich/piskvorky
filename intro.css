@@ -1,0 +1,65 @@
+.game {
+    background: #283e50;   
+}
+.game__container {
+    background: #283e50;
+}
+/* Header styles */
+
+.game-intro__header {
+    display: flex;
+    width: 100%;
+}
+.game-intro__banner {
+    max-width: 100%;
+}
+/* Content styles */
+
+.game-intro__content {
+    padding: 30px 16px;
+    flex-grow: 1;
+}
+
+.game-intro__title {
+    margin: 0 0 30px;
+    font-size: 2rem;
+    line-height: 1.2;
+}
+.game-intro__desctiption {
+    line-height: 1.5;
+    margin: 0;
+}
+
+/* Footer styles */
+
+.game-intro__footer {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* Media queries*/
+
+@media (min-width: 425px) {
+    .game {
+        background: linear-gradient(#615dad, #ffc8da) no-repeat center;
+    }
+    .game__container {
+        max-width: 364px;
+        margin: auto;
+        border-radius: 8px 8px 0 0;
+        overflow: hidden;
+        min-height: auto;
+    }
+    .game-intro__title {
+        font-size: 3rem;
+    }
+}
+
+@media (min-width: 768px) {
+    .game {
+        align-items: flex-start;
+    }
+    .game__container {
+        margin: 66px auto;
+    }
+}
