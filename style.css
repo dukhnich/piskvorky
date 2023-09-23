@@ -34,33 +34,33 @@ body {
 
 /* Header styles */
 
-.game__header {
+.game-intro__header {
     display: flex;
     width: 100%;
 }
-.game__banner {
+.game-intro__banner {
     max-width: 100%;
 }
 /* Content styles */
 
-.game__content {
+.game-intro__content {
     padding: 30px 16px;
     flex-grow: 1;
 }
 
-.game__title {
+.game-intro__title {
     margin: 0 0 30px;
     font-size: 2rem;
     line-height: 1.2;
 }
-.game__desctiption {
+.game-intro__desctiption {
     line-height: 1.5;
     margin: 0;
 }
 
 /* Footer styles */
 
-.game__footer {
+.game-intro__footer {
     display: flex;
     flex-wrap: wrap;
 }
@@ -71,18 +71,20 @@ body {
     flex-basis: 100%;
     border-top: 1px solid black;
 }
-.game__button--rules {
+.game__button--green {
     background: #1fcca4;
 }
-.game__button--rules:hover,
-.game__button--rules:active {
+.game__button--green:hover,
+.game__button--green:focus,
+.game__button--green:active {
     background: #1cbb96;
 }
-.game__button--start {
+.game__button--blue {
     background: #0197f6;
 }
-.game__button--start:hover,
-.game__button--start:active {
+.game__button--blue:hover,
+.game__button--blue:focus,
+.game__button--blue:active {
     background: #0090e9;
 }
 .game__button:active {
@@ -106,7 +108,7 @@ body {
         overflow: hidden;
         min-height: auto;
     }
-    .game__title {
+    .game-intro__title {
         font-size: 3rem;
     }
 }
