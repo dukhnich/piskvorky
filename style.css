@@ -31,7 +31,6 @@ body {
     min-height: 100vh;   
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
 }
 
 /* Buttons styles */
@@ -40,8 +39,6 @@ body {
     color: white;
     text-decoration: none;
     padding: 16px;
-    flex-basis: 100%;
-    border-top: 1px solid black;
 }
 .game__button--green {
     background: #1fcca4;

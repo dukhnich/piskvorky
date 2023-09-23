@@ -3,6 +3,7 @@
 }
 .game__container {
     background: #283e50;
+    justify-content: space-between;
 }
 /* Header styles */
 
@@ -35,6 +36,10 @@
 .game-intro__footer {
     display: flex;
     flex-wrap: wrap;
+}
+.game__button {
+    border-top: 1px solid black;
+    flex-basis: 100%;
 }
 
 /* Media queries*/
