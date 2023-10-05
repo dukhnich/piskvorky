@@ -52,4 +52,13 @@ if (table) {
     }
 }
 
+const restart = document.querySelector('#restart');
+if (restart) {
+    restart.addEventListener('click', (e) => {
+        if (!confirm('Opravdu chceš zacít znovu?')) {
+            e.preventDefault();
+        }
+    })
+}
+
 nextTurn();
