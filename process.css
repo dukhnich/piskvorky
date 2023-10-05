@@ -59,10 +59,31 @@
 .game-process__cell:focus {
     background: rgba(255, 255, 255, 0.5);
 }
+.game-process__cell--circle:before,
+.game-process__cell--cross:before {
+    animation-name: gameSymbol;
+    animation-duration: .15s;
+    content: '';
+    width: 50%;
+    height: 50%;
+}
 
 .game-process__cell--circle:before {
-    content: url(images/circle.svg);
+    background: url(images/circle.svg) no-repeat center;
+    background-size: contain;
 }
 .game-process__cell--cross:before {
-    content: url(images/cross.svg);
+    background: url(images/cross.svg) no-repeat center;
+    background-size: contain;
+}
+
+@keyframes gameSymbol {
+    from {
+        width: 0;
+        height: 0;
+    }
+    to {
+        width: 50%;
+        height: 50%;
+    }
 }
