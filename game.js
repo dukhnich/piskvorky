@@ -1,22 +1,30 @@
 const players = ['circle', 'cross']
-let player = null;
+let currentPlayer = null;
 const game = [];
 
-// Check win and change active player
-const nextTurn = (i, j) => {
-    const playerIndex = players.indexOf(player);
+// Change active player
+const nextTurn = () => {
+    // I use the way with array, because in this way we can add additional playes - ['circle', 'cross', 'ampersand'] - with the same logic 
+    const playerIndex = players.indexOf(currentPlayer);
     if (playerIndex < players.length - 1) {
-        player = players[playerIndex + 1];
+        currentPlayer = players[playerIndex + 1];
     } else {
-        player = players[0];
+        currentPlayer = players[0];
     }
     const playerSymbol = document.querySelector('#player_symbol');
     if (playerSymbol) {
-        playerSymbol.src = `images/${player}--white.svg`;
-        playerSymbol.alt = `${player} symbol`;
+        playerSymbol.src = `images/${currentPlayer}--white.svg`;
+        playerSymbol.alt = `${currentPlayer} symbol`;
     }
 }
-nextTurn();
+
+// Calculate is currentPlayer win
+// @params - current turn's coordinates
+// @returns Boolean - is currentPlayer win
+const checkEnd = (i, j) => {
+    //there will be some logic here
+    return false;
+}
 
 // Add 100 buttons to the table wrapper
 const table = document.querySelector('.game-process__table');
@@ -28,13 +36,20 @@ if (table) {
             const button = document.createElement('button');
             button.classList.add('game-process__cell');
             table.appendChild(button);
-            // Playes's turn
+            // Add playes's turn functionality
             button.addEventListener('click', () => {
-                button.classList.add(`game-process__cell--${player}`);
+                button.classList.add(`game-process__cell--${currentPlayer}`);
                 button.disabled = true;
-                game[i][j] = player;
-                nextTurn(i, j);
+                game[i][j] = currentPlayer;
+                const isEnd = checkEnd(i, j);
+                if (isEnd) {
+                    //display congrats message
+                    return;
+                }
+                nextTurn();
             });
         }
     }
 }
+
+nextTurn();
