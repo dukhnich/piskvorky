@@ -45,6 +45,9 @@
     border: 1px solid black;
     box-shadow: 0 0 20px rgba(0,0,0, 0.2);
 }
+.game-process__table--disabled {
+    pointer-events: none;
+}
 .game-process__cell {
     aspect-ratio: 1;
     background: rgba(255, 255, 255, 0.3);
